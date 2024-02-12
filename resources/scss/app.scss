@@ -3,4 +3,43 @@
     img{
         height: 75px;
     }
+};
+footer{
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: small;
+    .top {
+        padding: 40px 0;
+        background-image: url(../img/dc-logo-bg.png);
+        background-position: right;
+        background-repeat: no-repeat;
+    
+        h5{
+            color: #fff;
+            margin: 10px 0px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    
+        li {
+            color: grey;
+        }
+    }
+    .bottom{
+        background-color: #303030;
+        .socials{
+            img{
+                height: 30px;
+                padding: 0px 10px;
+            }
+        }
+        .blu_text{
+            font-size: 20px;
+        }
+    }
+    
+}
+.blu_text{
+    color: #0282F9;
 }
