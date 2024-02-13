@@ -16,4 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('comics');
     return view('home', compact('comics'));
-});
+})->name('homepage');
+
+Route::get('/{id}', function ($id) {
+    $comics = config('comics');
+    $comic = null;
+    foreach($comics as $item){
+        if($item['id'] == $id)
+            $comic = $item;
+    }
+    return view('detail_comic', compact('comic', 'item'));
+})->name('detail-comic');
